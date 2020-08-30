@@ -1,0 +1,383 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(270, 20%, 96%);
+}
+
+.main {
+  display: flex;
+  
+  width:100%;
+  height: 100vh;
+}
+
+.bubble {
+  background: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+  width: 490px;
+  height: 780px;
+  border-radius: 0 0 290px 200px;
+}
+
+.phone {
+  position: absolute;
+    background-color: #fff;
+    width: 20%;
+    top: 100px;
+    height: 720px;
+    left: 391px;
+    border-radius: 24px;
+}
+
+.inside-phone {
+  padding: 10px;
+}
+
+.inside-phone-profile {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 90px;
+  border-radius: 22px 22px 9px 9px;
+  background: linear-gradient(-90deg, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+  box-shadow: 0px 10px 18px rgba(0, 0, 0, 0.25);
+}
+
+.inside-phone-profile-bubble {
+  margin: 0 auto;
+
+  background-color: hsl(0, 0%, 100%);
+  width: 50%;
+  height: 30%;
+  border-radius: 0px 0px 16px 16px;
+}
+
+.inside-phone-description {
+  display: flex;
+  justify-content: space-between;
+  height: 70%;
+}
+
+.inside-phone-left {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 60%;
+}
+
+.inside-phone-left .go-back {
+  width: 20px;
+  height: 20px;
+}
+
+.inside-phone-left .avatar-background {
+  display: flex;
+  background-color: #fff;
+  border-radius: 100%;
+  padding: 1px;
+}
+
+.inside-phone-left .avatar-background img {
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+}
+
+.inside-phone-texts p:nth-child(1) {
+  color: #fff;
+  font-size: 16px;
+  font-family: "Rubik";
+}
+
+.inside-phone-texts p:nth-child(2) {
+  color: #fff;
+  font-size: 12px;
+  font-family: "Rubik";
+  font-weight: 300;
+}
+
+.inside-phone-right {
+  display: flex;
+  align-items: center;
+}
+
+.inside-phone-right img {
+  width: 30px;
+  height: 30px;
+}
+
+.inside-phone-chat-1 p {
+  background-color: #ebe8ed;
+  font-family: "Rubik";
+  font-size: 16px;
+  font-weight: 350;
+  color: hsl(276, 55%, 52%);
+  padding: 8px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  width: 70%;
+}
+
+.inside-phone-chat {
+  background-color: hsl(270, 20%, 96%);
+  padding: 17px;
+  border-radius: 3px 3px 28px 28px;
+}
+
+.chat-2-images {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.inside-phone-chat-2 .chat-2-images img {
+    width: 70px;
+    border-radius: 16px;
+    margin-right: 16px;
+}
+
+.inside-phone-messages{
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.inside-phone-messages p:first-child{
+  flex-basis: 65%;
+}
+
+.inside-phone-messages p{  
+  background-color: #fff;
+  font-family: 'Rubik';
+  font-weight: 300;
+  border-radius: 8px;
+  padding: 8px;
+  margin-top: 10px;
+}
+
+.inside-phone-chat-3-messages{
+  display: flex;
+}
+
+.inside-phone-chat-3-messages p {
+  background-color: #ebe8ed;
+  font-family: "Rubik";
+  font-size: 16px;
+  font-weight: 300;
+  color: hsl(276, 55%, 52%);
+  padding: 8px;
+  border-radius: 8px;
+  margin-top:10px;
+  margin-bottom: 10px;
+  width: 70%;
+}
+
+.inside-phone-chat-3-message-big-item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  border-radius: 16px 16px 16px 4px;
+  margin-top: 4px;
+  margin-bottom: 10px;
+  width: 80%;
+  background: linear-gradient(-90deg, hsl(264, 100%, 61%), hsl(293, 100%, 63%) );
+}
+
+.message-item-group{
+  display: flex;
+}
+
+.price {
+  color: #fff;
+  font-weight: 700;
+  font-family: 'Rubik';
+  font-size: 24px;
+}
+
+.message-item-group p{
+  color: #fff;
+  font-family: 'Rubik';
+  font-weight: 300;
+
+}
+
+.circle{
+  border: 1px solid #ccc;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  margin-right: 16px;
+}
+
+.inside-phone-send{
+  background-color: #fff;
+    border-radius: 36px;
+    padding: 12px;
+}
+
+.inside-phone-send p{
+  color: #ccc;
+  font-family: 'Rubik';
+  font-weight: 300;
+}
+
+.inside-phone-placeholder-send{
+  display: flex;
+  background-color: hsl(271, 36%, 24%);
+  border-radius: 100%;
+  padding: 6px;
+}
+
+.inside-phone-placeholder-send img{
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  
+}
+
+.inside-phone-placeholder{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+
+.container-phone-article{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  align-items: center;
+  width: 45%;
+}
+
+.article{
+  margin-left: 400px;
+  font-family: 'Rubik';
+}
+
+.article h2{
+  font-size: 38px;
+  font-weight: 500;
+  color: hsl(271, 36%, 24%);
+  margin-bottom: 16px;
+
+}
+
+.article p{
+  font-weight: 300;
+  line-height: 25px;
+  font-size: 18px;
+  color: hsl(270, 7%, 64%);
+}
+
+
+@media (max-width: 1440px){
+  .phone {
+    position: absolute;
+    background-color: #fff;
+    width: 27%;
+    top: 100px;
+    height: 720px;
+    left: 389px;
+    border-radius: 24px;
+}
+
+.container-phone-article {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  align-items: center;
+  width: 63%;
+}
+}
+
+@media (max-width: 415px){
+  .bubble{
+    position: absolute;
+    background: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    width: 200px;
+    height: 580px;
+    border-radius: 0 0 290px 200px;
+  }
+
+  .phone {
+    position: absolute;
+    background-color: #fff;
+    width: 80%;
+    top: 100px;
+    height: 680px;
+    left: 35px;
+    border-radius: 24px;
+}
+
+.container-phone-article {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  align-items: center;
+  width: 100%;
+}
+
+.article{
+  margin-left: 0px;
+  position: absolute;
+  top: 900px;
+  padding: 40px;
+}
+
+.article h2{
+  font-size: 28px;
+}
+
+.article p{
+  font-size: 14px;
+}
+
+.inside-phone-chat-2 .chat-2-images img {
+  width: 50px;
+  border-radius: 16px;
+  margin-right: 16px;
+}
+
+.inside-phone-chat-3-message-big-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px;
+  border-radius: 16px 16px 16px 4px;
+  margin-top: 4px;
+  margin-bottom: 10px;
+  width: 95%;
+  background: linear-gradient(-90deg, hsl(264, 100%, 61%), hsl(293, 100%, 63%) );
+}
+
+.inside-phone-left {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 75%;
+}
+
+.inside-phone-chat-3-messages p {
+  background-color: #ebe8ed;
+  font-family: "Rubik";
+  font-size: 14px;
+  font-weight: 300;
+  color: hsl(276, 55%, 52%);
+  padding: 8px;
+  border-radius: 8px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 90%;
+}
+.inside-phone-messages p{
+  font-size: 14px;
+}
+
+.inside-phone-chat-1 p{
+  font-size: 14px;
+}
+
+}
